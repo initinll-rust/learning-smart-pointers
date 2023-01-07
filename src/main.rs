@@ -1,7 +1,11 @@
-mod smart_pointer_box_concepts;
-mod smart_pointer_deref_trait_concepts;
-mod smart_pointer_drop_trait_concepts;
-mod smart_pointer_rc_concepts;
+mod single_threaded;
+
+use single_threaded::{
+    smart_pointer_box_concepts, 
+    smart_pointer_deref_trait_concepts, 
+    smart_pointer_drop_trait_concepts, 
+    smart_pointer_rc_concepts
+};
 
 fn main() {
     // Box Smart Pointer
