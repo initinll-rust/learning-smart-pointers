@@ -5,7 +5,8 @@ use single_threaded::{
     smart_pointer_deref_trait_concepts, 
     smart_pointer_drop_trait_concepts, 
     smart_pointer_rc_concepts,
-    smart_pointer_cell_concepts
+    smart_pointer_cell_concepts,
+    smart_pointer_refcell_concepts
 };
 
 fn main() {
@@ -24,4 +25,9 @@ fn main() {
     // Interior Mutability Pattern - Cell<T>
     smart_pointer_cell_concepts::mutate_var_without_mut_keyword();
     smart_pointer_cell_concepts::mutate_struct_var_without_mut_keyword();
+    // Interior Mutability Pattern - RefCell<T>
+    smart_pointer_refcell_concepts::mutate_var_without_mut_keyword_1();
+    smart_pointer_refcell_concepts::mutate_var_without_mut_keyword_2();
+    smart_pointer_refcell_concepts::mutate_struct_var_without_mut_keyword_1();
+    smart_pointer_refcell_concepts::mutate_struct_var_without_mut_keyword_2();
 }
