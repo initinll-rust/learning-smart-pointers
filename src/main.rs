@@ -4,7 +4,8 @@ use single_threaded::{
     smart_pointer_box_concepts, 
     smart_pointer_deref_trait_concepts, 
     smart_pointer_drop_trait_concepts, 
-    smart_pointer_rc_concepts
+    smart_pointer_rc_concepts,
+    smart_pointer_cell_concepts
 };
 
 fn main() {
@@ -20,4 +21,7 @@ fn main() {
     // Reference count for Smart Pointer
     smart_pointer_rc_concepts::rc_list_immutable();
     smart_pointer_rc_concepts::rc_string_immutable();
+    // Interior Mutability Pattern - Cell<T>
+    smart_pointer_cell_concepts::mutate_var_without_mut_keyword();
+    smart_pointer_cell_concepts::mutate_struct_var_without_mut_keyword();
 }
