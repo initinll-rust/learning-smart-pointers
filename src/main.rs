@@ -31,6 +31,6 @@ fn main() {
     smart_pointer_refcell_concepts::mutate_var_without_mut_keyword_2();
     smart_pointer_refcell_concepts::mutate_struct_var_without_mut_keyword_1();
     smart_pointer_refcell_concepts::mutate_struct_var_without_mut_keyword_2();
-    //
+    // Interior Mutability Pattern - Rc<RefCell<T>>
     smart_pointer_rc_refcell_concepts::mutate_var_without_mut_keyword_1();
 }
